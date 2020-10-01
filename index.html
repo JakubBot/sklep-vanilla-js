@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aven</title>
+    <meta name="description" content="Aven pizzeria" />
+    <meta name="keywords" content="pizzeria, Aven, good pizza, tasty pizza" />
+    <meta name="author" content="Jakub" />
+    <link href="libs/swiper.js/swiper.min.css" rel="stylesheet" />
+    <link href="fontello/css/fontello.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="img/burger-icon.png" rel="shortcut icon" />
+  </head>
+
+  <body>
+    
+
+    <div class="container">
+      <header class="header">
+        <div class="header__logo"></div>
+        <div class="header__checkbox">
+          <input type="checkbox" />
+        </div>
+        <div class="header__card">
+          <img src="img/Ikona szefa kuchni.png" alt="Szef kuchni" />
+          <h2>Sprawdź najbliższą pizzerie!</h2>
+          <i>Wpisz swój adres ponizej</i>
+          <i class="icon-down-open"></i>
+          <div class="destination">
+            <input
+              type="text"
+              placeholder="Miasto"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Miasto'"
+            />
+            <input
+              type="text"
+              placeholder="Ulica"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Ulica'"
+            />
+            <input
+              type="text"
+              placeholder="Nr"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Nr'"
+            />
+            <input
+              type="text"
+              placeholder="Nr M"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Nr M'"
+            />
+          </div>
+          <div class="submit">
+            <button>Wyszukaj</button>
+          </div>
+          <div class="contact">
+            <i class="icon-phone">111111111</i>
+            <i class="icon-street-view">Wyszyńskiego 12</i>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <h2>Aktualne Promocje!</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="box">
+                <div class="about">
+                  <h2>Jajko na toscie</h2>
+                  <p>Zdrowe, lekkie i pożywne</p>
+                  <p>Już w cenie 10.99 zł</p>
+                  <button class="basket">
+                    <p>Dodaj do koszyka</p>
+                    <i class="icon-basket"></i>
+                  </button>
+                </div>
+                <h4>Powrót do zdjęcia</h4>
+                <div class="figure first"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <div class="about">
+                  <h2>Salatka z bekonem</h2>
+                  <p>Przepyszne, szybkie i tanie</p>
+                  <p>Już w cenie 8.99 zł</p>
+                  <button class="basket">
+                    <p>Dodaj do koszyka</p>
+                    <i class="icon-basket"></i>
+                  </button>
+                </div>
+                <h4>Powrót do zdjęcia</h4>
+                <div class="figure second"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <div class="about">
+                  <h2>Fit sałatka</h2>
+                  <p>Mało kaloryczne i zdrowe</p>
+                  <p>Już w cenie 6.99 zł</p>
+                  <button class="basket">
+                    <p>Dodaj do koszyka</p>
+                    <i class="icon-basket"></i>
+                  </button>
+                </div>
+                <h4>Powrót do zdjęcia</h4>
+                <div class="figure third"></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="box">
+                <div class="about">
+                  <h2>Tost avokado</h2>
+                  <p>Smaczne i szybkie</p>
+                  <p>Już w cenie 5.99 zł</p>
+                  <button class="basket">
+                    <p>Dodaj do koszyka</p>
+                    <i class="icon-basket"></i>
+                  </button>
+                </div>
+                <h4>Powrót do zdjęcia</h4>
+                <div class="figure fourth"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <h1>Nasza Oferta</h1>
+        <div class="gallery">
+          <div class="gallery__card-main">
+            <div class="front">
+              <img
+                alt="bekon avokado"
+                src="img/galeria/bekon avokado - galeria.jpg"
+                alt="Sałatka z bekonem"
+              />
+            </div>
+            <div class="back">
+              <h2>Sałatka z bekonem</h2>
+              <div>
+                <p>
+                  Chrupiąca, wielowarstwowa sałatka oszałamiająca swoim smakiem
+                </p>
+              <p>Już w cenie 6.99 zł</p>
+              </div>
+              <button class="basket details-basket">
+                <p>Dodaj do koszyka</p>
+                <i class="icon-basket"></i>
+              </button>
+            </div>
+          </div>
+          <div class="gallery__card-main">
+            <div class="front">
+              <img
+                alt="chleb avokado"
+                src="img/galeria/chleb avokado -galeria.jpg"
+                alt="Kanapka z jajkiem i avokado"
+              />
+            </div>
+            <div class="back">
+              <h2>Kanapka z jajkiem i avokado</h2>
+              <div>
+                <p>
+                  W ostatnich latach modna klasyka. Jest zdrowa, wegetariańska,
+                  dość tłusta i wyrazista
+                </p>
+              </div>
+              <p>Już w cenie 9.99 zł</p>
+              <button class="basket details-basket">
+                <p>Dodaj do koszyka</p>
+                <i class="icon-basket"></i>
+              </button>
+            </div>
+          </div>
+          <div class="gallery__card-main">
+            <div class="front">
+              <img
+                alt="liscie bazyli avokado pokrojony chleb"
+                src="img/galeria/liscie bazyli avokado pokrojony chleb - galeria.jpg"
+                alt="liscie bazyli avokado pokrojony chleb
+					Kanapka z awokado i liśćmi bazylii"
+              />
+            </div>
+            <div class="back">
+              <h2>Kanapka z awokado i liśćmi bazylii</h2>
+              <div>
+                <p>
+                  Modne i popularne danie przyrządzane w błyskawiczny sposób
+                  zadowolą każego smakosza
+                </p>
+              </div>
+              <p>Już w cenie 7.99 zł</p>
+              <button class="basket details-basket">
+                <p>Dodaj do koszyka</p>
+                <i class="icon-basket"></i>
+              </button>
+            </div>
+          </div>
+          <div class="gallery__card-main">
+            <div class="front">
+              <img
+                alt="makaron w sosie z miesem"
+                src="img/galeria/makaron - galeria.jpg"
+                alt="Makaron w mięsem"
+              />
+            </div>
+            <div class="back">
+              <h2>Makaron w mięsem</h2>
+              <div>
+                <p>
+                  Pyszny makaron wraz z przyprawami i mięsem stanowią idealną
+                  propozycję na obiad
+                </p>
+              </div>
+              <p>Już w cenie 11.99 zł</p>
+              <button class="basket details-basket">
+                <p>Dodaj do koszyka</p>
+                <i class="icon-basket"></i>
+              </button>
+            </div>
+          </div>
+          <div class="gallery__card-main">
+            <div class="front">
+              <img
+                alt="nuggetsy sos salata"
+                src="img/galeria/nuggetsy sos salata - galeria.jpg"
+                alt="Nuggetsy z sałatką"
+              />
+            </div>
+            <div class="back">
+              <h2>Nuggetsy z sałatką</h2>
+              <div>
+                <p>
+                  Nuggetsy z sosem śmietankowym wraz z sałatą stanowia idealna
+                  przekąskę
+                </p>
+              </div>
+              <p>Już w cenie 10.99 zł</p>
+              <button class="basket details-basket">
+                <p>Dodaj do koszyka</p>
+                <i class="icon-basket"></i>
+              </button>
+            </div>
+          </div>
+          <div class="gallery__card-main">
+            <div class="front">
+              <img
+                alt="pomidor avokado"
+                src="img/galeria/pomidor avokado - galeria.jpg"
+                alt="Naleśnik z niespodzianką"
+              />
+            </div>
+            <div class="back">
+              <h2>Naleśnik z niespodzianką</h2>
+              <div>
+                <p>
+                  Cieńki naleśnik usmażony na bazie specjalnego przepisu wraz z
+                  awokado i pomidorem stanowią miłą odskocznię od tradycyjnych
+                  dań
+                </p>
+              </div>
+              <p>Już w cenie 9.99 zł</p>
+              <button class="basket details-basket">
+                <p>Dodaj do koszyka</p>
+                <i class="icon-basket"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="information">
+        <div class="information__card">
+          <img src="img/logo_pizzeria.png" alt="Logo" />
+          <h1>O nas</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            tinciduntblandit auctor. Donec at nunc sed quam efficitur fermentum
+            vel et felis. Sed vitae dictum magna. Nunc enim mi, mollis nec
+            efficitur non, viverranon dolor. Pellentesque ut elit nisi. Nullam
+            ut felis blandit, consectetur nisi sit amet,sagittis ex.
+          </p>
+          <button class="information__button">Read More</button>
+        </div>
+      </div>
+      <footer class="footer">
+        <nav>
+          <div class="footer__aboutSite">
+            <ol>
+              <li><a href="#">O nas</a></li>
+              <li><a href="#">Promocje</a></li>
+              <li><a href="#">Wykaz składników</a></li>
+              <li><a href="#">Regulamin</a></li>
+            </ol>
+          </div>
+        </nav>
+        <div class="footer__aboutMe">
+          <p>Dziękujemy za odwiedzenie strony</p>
+          <div class="footer__mySocials">
+            <a
+              target="_blank"
+              href="https://github.com/JakubBot"
+              title="Jakub B"
+              ><i class="icon-github-circled"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.google.com/intl/pl/gmail/about"
+              title="bkuba1401@gmail.com"
+              ><i class="icon-mail"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- end page -->
+    <!-- additionals elements on the page -->
+    <div id="cursor"></div>
+    <div id="media-button">
+      <span>+</span>
+      <ul>
+        <li>
+          <a target="_blank" href="https://twitter.com/explore">
+            <i class="icon-twitter"></i>Share on twitter</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://www.facebook.com">
+            <i class="icon-facebook"></i>Share on facebook</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/?hl=pl">
+            <i class="icon-instagram"></i>Share on instagram</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div id="basket">
+      <span><i class="icon-basket"></i></span>
+      <ul>
+        <div class="basket-info">
+          <p>Nazwa</p>
+          <p>Cena(szt.)</p>
+        </div>
+        <div id="data"></div>
+        <p></p>
+        <div class="basket-info total">
+          <h4>Total</h4>
+          <p>0.00</p>
+        </div>
+        <h5>Wyczyść wszystko</h5>
+      </ul>
+    </div>
+
+    <!--Libs-->
+    <script src="libs/swiper.js/swiper.min.js"></script>
+    <!--Scripts-->
+    <script src="app.js"></script>
+  </body>
+</html>
