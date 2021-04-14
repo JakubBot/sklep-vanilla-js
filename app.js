@@ -56,6 +56,7 @@ const checkbox = document.querySelector('input[type="checkbox"]');
 const interactiveElements = document.querySelectorAll(
   "button,h5,#data,.swiper-button-prev,.swiper-button-next,a,h4,input,span"
 );
+
 interactiveElements.forEach((value) => {
   value.setAttribute("style", "cursor: none;");
 }, false);
@@ -140,8 +141,8 @@ basketIcon.addEventListener(
     const amount = document.querySelectorAll("#amount");
     const minus = document.querySelectorAll("#minus");
     const plus = document.querySelectorAll("#plus");
-    const cenauslugi = document.querySelectorAll("#cenauslugi");
-
+    const serviePrice = document.querySelectorAll("#serviePrice");
+    console.log(serviePrice);
     minus.forEach((value, index) => {
       if (value.getAttribute("listener") === null) {
         value.addEventListener(
@@ -150,7 +151,7 @@ basketIcon.addEventListener(
             if (amount[index].innerHTML > 1) {
               let basicPrice = parseFloat(total.innerHTML, 10);
               amount[index].innerHTML--;
-              extraPrice = extraPrice - cenauslugi[index].innerHTML * 1;
+              extraPrice = extraPrice - serviePrice[index].innerHTML * 1;
               total.innerHTML = (basicPrice + extraPrice).toFixed(2) + " zł";
               extraPrice = 0;
             }
@@ -168,7 +169,7 @@ basketIcon.addEventListener(
           () => {
             let basicPrice = parseFloat(total.innerHTML, 10);
             amount[index].innerHTML++;
-            extraPrice += cenauslugi[index].innerHTML * 1;
+            extraPrice += serviePrice[index].innerHTML * 1;
             total.innerHTML = (basicPrice + extraPrice).toFixed(2) + " zł";
             extraPrice = 0;
           },
@@ -180,7 +181,7 @@ basketIcon.addEventListener(
 
     if (basket.classList.contains("activeB")) {
       for (let i = 0; i < data.childElementCount; ++i) {
-        wholePrice += amount[i].innerHTML * cenauslugi[i].innerHTML;
+        wholePrice += amount[i].innerHTML * serviePrice[i].innerHTML;
       }
       total.innerHTML = wholePrice.toFixed(2) + " zł";
     } else {
@@ -266,7 +267,7 @@ function addtoBasket(index) {
   let itemName = shortForm(informations[index].name);
   data.insertAdjacentHTML(
     "beforeend",
-    `<li style=${basketitemsDisplay}><h4>${itemName}</h4><p><span id="minus" class='mark'>-</span><span id="amount">1</span><span id="plus" class='mark'>+</span></p><p id="cenauslugi">${informations[index].price}</p></li>`
+    `<li style=${basketitemsDisplay}><h4>${itemName}</h4><p><span id="minus" class='mark'>-</span><span id="amount">1</span><span id="plus" class='mark'>+</span></p><p id="serviePrice">${informations[index].price}</p></li>`
   );
 
   //all icons but not this in swiper
